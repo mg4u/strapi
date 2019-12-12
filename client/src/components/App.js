@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { Container, Heading, Box } from "gestalt";
 import './App.css';
 import 'gestalt/dist/gestalt.css'
+import Strapi from 'strapi-sdk-javascript/build/main'
 import SignIn from './signin';
 import SignOut from './signout';
 import CheckOut from './checkout';
@@ -11,11 +13,12 @@ import Navbar from './navbar';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-      </div>
+      
+      <Container>
+        <Box display="flex" justifyContent="center">
+          <Heading color="maroon" >Main APP</Heading>
+        </Box>
+      </Container>
     );
   }
 }
