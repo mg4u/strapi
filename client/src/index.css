@@ -2,4 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #ebe5f2;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a.active, .active * {
+  color: #e5cfe8 !important;
 }
